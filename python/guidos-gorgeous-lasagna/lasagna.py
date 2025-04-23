@@ -29,7 +29,7 @@ def bake_time_remaining(elapsed_bake_time):
 # You might also consider defining a 'PREPARATION_TIME' constant.
 # You can do that on the line below the 'EXPECTED_BAKE_TIME' constant.
 # This will make it easier to do calculations.
-def preperation_time_in_minutes(number_of_layers):
+def preparation_time_in_minutes(number_of_layers):
     """Calculate the preperation time based on the number of layers 
 
     :param number_of_layers: int - how many laters you are cooking
@@ -52,10 +52,4 @@ def elapsed_time_in_minutes(number_of_layers, elapsed_bake_time):
     :return: int - elapsed bake time (in minutes).
 
     """
-    return preperation_time_in_minutes(number_of_layers) + elapsed_bake_time
-
-
-
-
-# TODO: Remember to go back and add docstrings to all your functions
-#  (you can copy and then alter the one from bake_time_remaining.)
+    return preparation_time_in_minutes(number_of_layers) + elapsed_bake_time
